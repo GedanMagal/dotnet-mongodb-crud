@@ -23,7 +23,7 @@ namespace TaurusApi
             return Ok(playerList);
         }
 
-        [HttpGet("{id}", Name = "GetPlayer")]
+        [HttpGet("{id}")]
         public ActionResult<Player> GetActionResult(string id)
         {
             var player = _playerService.Get(id);
